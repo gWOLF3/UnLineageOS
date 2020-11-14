@@ -32,15 +32,16 @@ This is meta repo, which gets used by Google's `repo` tool to generate the proje
 
 #### 
 
-
-
-
-
-
 ## Developing
 
 - good resource guide for building more efficiently
 http://blog.udinic.com/2014/07/24/aosp-part-3-developing-efficiently/ 
+
+
+
+## Other Resources
+
+- Udi Cohen blog - http://blog.udinic.com/2014/05/24/aosp-part-1-get-the-code-using-the-manifest-and-repo/
 
 
 
