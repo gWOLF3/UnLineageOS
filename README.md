@@ -1,39 +1,67 @@
 # UnLineage OS
 
-AOSP (Android Open Source Project) is grossly huge. Its not easy to modify. Independent projects like lineage are cool, but still very difficult to navigate and customize since the AOSP is inherently huge and difficult to work with. 
+Grokking my custom Lineage build from start to finish.
 
-Goal of this project is to break down and customize some LineageOS defaults. 
+```
+Vendor: google
+Device: Pixel XL
+codename: Marlin
+base ROM: Lineage 17.1
+SDK version: 29 (Android 10)
 
-## LineageOS
+```
 
-- most popular, open source operating system.
-- not tied to specific vendor
-- good starting point to build off of
-- good community (discord channel for asking questions)
-- wiki helpful for building base version for different devices
+## Understanding the Hardware
+
+### The SoC 
+
+- Qualcomm Snapdragon [821 (MSM8996)](https://www.notebookcheck.net/Qualcomm-Snapdragon-821-MSM8996-Pro-SoC.180683.0.html#:~:text=The%20Qualcomm%20Snapdragon%20821%20MSM8996,clocked)
+
+### A/B Partition Schema
+
+- overview and introduction: https://www.xda-developers.com/how-a-b-partitions-and-seamless-updates-affect-custom-development-on-xda/
+
+- logistics of a/b slots: https://www.droidwin.com/flash-roms-magisk-twrp-kernels-a-b-partition-devices/
+
+### Boot ROM
+
+- [Comparing Qualcomm's XBL UEFI bootloaders on Snapdragon 820, 835, and 845](https://worthdoingbadly.com/qcomxbl/)
+
+## Understanding The Boot Process
+
+### Overview
+
+- [Understanding the boot process from startup](https://sites.google.com/site/androidersclub/in-the-news/theandroidbootprocessfrompower-on)
+
+### The Bootloader
+
+- [Little Kernal (LK)](https://developer.qualcomm.com/download/db410c/little-kernel-boot-loader-overview.pdf)
+
+### Init Process
+
+- [init.rc](https://github.com/openinternet-cc/android_system_core/blob/lineage-17.1/rootdir/init.rc)
+
+### The Android Runtime (ART) / Dalvik
+
+- [AOSP Documentation](https://source.android.com/devices/tech/dalvik)
+
+### System Server 
+
+- [SystemServer.java]()
+
+- Activity Manager
 
 ## Understanding AOSP
 
-> All referenced projects will be from my fork (openinternet-cc) - direct fork from LineageOS Repo. 
-
 ### Project Structure
+
+## Gettings Started: Developing on AOSP
 
 AOSP uses `repo` command - see [here](https://source.android.com/setup/develop/repo) to read up on that. 
 
 > Keep in mind that the AOSP is spread across many different git repositories. In this context, I am going to refer to the different relevant git repositories and how they relate to the whole. 
 
-
-#### /android
-
-https://github.com/openinternet-cc/android
-
-This is meta repo, which gets used by Google's `repo` tool to generate the project structure. To a AOSP noob such as myself, this is actually really confusing at first and its not easy to understand exactly how its working. But the important part, is you can look at the xml manifest to get a glance at all the different git repos which are going to be included in your build. 
-
-#### /android_frameworks_base
-
-#### 
-
-## Developing
+- Udi Cohen blog - http://blog.udinic.com/2014/05/24/aosp-part-1-get-the-code-using-the-manifest-and-repo/
 
 - good resource guide for building more efficiently
 http://blog.udinic.com/2014/07/24/aosp-part-3-developing-efficiently/ 
@@ -42,9 +70,6 @@ http://blog.udinic.com/2014/07/24/aosp-part-3-developing-efficiently/
 https://android.jlelse.eu/building-aosp-platform-apps-on-android-studio-fae87d6c370a
 
 
-## Other Resources
-
-- Udi Cohen blog - http://blog.udinic.com/2014/05/24/aosp-part-1-get-the-code-using-the-manifest-and-repo/
 
 
 
