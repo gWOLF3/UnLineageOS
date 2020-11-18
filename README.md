@@ -18,9 +18,10 @@ Goal of this project is to break down and customize some LineageOS defaults.
 
 ### Project Structure
 
-Lineage uses `repo` command - see [here](https://source.android.com/setup/develop/repo) to read up on that. 
+AOSP uses `repo` command - see [here](https://source.android.com/setup/develop/repo) to read up on that. 
 
 > Keep in mind that the AOSP is spread across many different git repositories. In this context, I am going to refer to the different relevant git repositories and how they relate to the whole. 
+
 
 #### /android
 
@@ -37,6 +38,8 @@ This is meta repo, which gets used by Google's `repo` tool to generate the proje
 - good resource guide for building more efficiently
 http://blog.udinic.com/2014/07/24/aosp-part-3-developing-efficiently/ 
 
+- why are AOSP platform apps not building in Android Studio? 
+https://android.jlelse.eu/building-aosp-platform-apps-on-android-studio-fae87d6c370a
 
 
 ## Other Resources
