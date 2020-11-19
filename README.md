@@ -1,4 +1,4 @@
-# UnLineage OS
+# Grokking AOSP (Android Open Source Project)
 
 Grokking my custom Lineage build from start to finish.
 
@@ -56,23 +56,24 @@ SDK version: 29 (Android 10)
 
 - Activity Manager
 
-## Understanding AOSP
-
-### Project Structure
 
 ## Gettings Started: Developing on AOSP
 
-AOSP uses `repo` command - see [here](https://source.android.com/setup/develop/repo) to read up on that. 
+### Build Tooling
 
-> Keep in mind that the AOSP is spread across many different git repositories. In this context, I am going to refer to the different relevant git repositories and how they relate to the whole. 
+- [repo command](https://source.android.com/setup/develop/repo): like a "meta" git command 
 
-- Udi Cohen blog - http://blog.udinic.com/2014/05/24/aosp-part-1-get-the-code-using-the-manifest-and-repo/
+> Advice for building efficiently: [Udi Cohen blog](http://blog.udinic.com/2014/07/24/aosp-part-3-developing-efficiently/)
 
-- good resource guide for building more efficiently
-http://blog.udinic.com/2014/07/24/aosp-part-3-developing-efficiently/ 
 
-- why are AOSP platform apps not building in Android Studio? 
-https://android.jlelse.eu/building-aosp-platform-apps-on-android-studio-fae87d6c370a
+#### Hybrid Build System (Make (legacy) -> Soong (new))
+
+- [Make Build System](https://android.googlesource.com/platform/build/+/master/README.md)
+
+- [Soong Build System](https://source.android.com/setup/build)
+
+> Why are AOSP platform apps not building in Android Studio? 
+[Link](https://android.jlelse.eu/building-aosp-platform-apps-on-android-studio-fae87d6c370a) (*Hint*: AOSP Doesn't use Gradle*)
 
 
 
