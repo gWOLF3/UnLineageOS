@@ -33,6 +33,11 @@ SDK version: 29 (Android 10)
 
 - [Understanding the boot process from startup](https://sites.google.com/site/androidersclub/in-the-news/theandroidbootprocessfrompower-on)
 
+### Fastboot OEM
+
+- [A vuln perpective](https://www.usenix.org/system/files/conference/woot17/woot17-paper-hay.pdf) - used at comma
+- [Comma flash process reference](https://github.com/commaai/eon-neos-builder/blob/master/devices/eon/flash.sh)
+
 ### The Bootloader
 
 - [Little Kernal (LK)](https://developer.qualcomm.com/download/db410c/little-kernel-boot-loader-overview.pdf)
