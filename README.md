@@ -59,7 +59,9 @@ SDK version: 29 (Android 10)
 
 ## Gettings Started: Developing on AOSP
 
-### Build Tooling
+### Platform Development
+
+#### Build Tooling
 
 - [repo command](https://source.android.com/setup/develop/repo): like a "meta" git command 
 
@@ -73,9 +75,22 @@ SDK version: 29 (Android 10)
 - [Soong Build System](https://source.android.com/setup/build)
 
 > Why are AOSP platform apps not building in Android Studio? 
-[Link](https://android.jlelse.eu/building-aosp-platform-apps-on-android-studio-fae87d6c370a) (*Hint*: AOSP Doesn't use Gradle*)
+[Link](https://android.jlelse.eu/building-aosp-platform-apps-on-android-studio-fae87d6c370a) (*Hint*: AOSP Doesn't use Gradle)
+
+> [Pain Points](https://willnewton.name/2018/09/21/why-working-with-android-aosp-can-be-frustrating/) of developing of AOSP
 
 
+### Application Development
 
+[Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) can be used to build apks from command line 
 
+> (useful if you want to embed apks into a distro without the need to integrate them into the Soong/Make build pipeline)
+
+> Its good for [other reasons](https://medium.com/@bherbst/understanding-the-gradle-wrapper-a62f35662ab7) as well. 
+
+Android Studio IDE for everything else.
+
+#### Priviledged Permission
+
+- [priv-app whitelisting](https://source.android.com/devices/tech/config/perms-whitelist)
 
