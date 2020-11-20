@@ -94,3 +94,7 @@ Android Studio IDE for everything else.
 
 - [priv-app whitelisting](https://source.android.com/devices/tech/config/perms-whitelist)
 
+
+#### Prebuilt APKs
+
+- [stack overflow post - how to](https://stackoverflow.com/questions/10579827/how-do-i-add-apks-in-an-aosp-build?lq=1)
