@@ -63,6 +63,8 @@ SDK version: 29 (Android 10)
 
 #### Build Tooling
 
+- [android build lingo](http://www.trcompu.com/MySmartPhone/AndroidKitchen/Breakfast-Brunch-Lunch.html): breakfast, brunch, bacon?
+
 - [repo command](https://source.android.com/setup/develop/repo): like a "meta" git command 
 
 > Advice for building efficiently: [Udi Cohen blog](http://blog.udinic.com/2014/07/24/aosp-part-3-developing-efficiently/)
