@@ -84,7 +84,9 @@ SDK version: 29 (Android 10)
 
 ### Application Development
 
-[Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) can be used to build apks from command line 
+- [application dev fundamental concepts](https://developer.android.com/guide/components/fundamentals)
+
+- [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) can be used to build apks from command line 
 
 > (useful if you want to embed apks into a distro without the need to integrate them into the Soong/Make build pipeline)
 
