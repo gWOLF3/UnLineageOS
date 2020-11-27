@@ -63,10 +63,28 @@ SDK version: 29 (Android 10)
 
 #### Build Tooling
 
-- [android build lingo](http://www.trcompu.com/MySmartPhone/AndroidKitchen/Breakfast-Brunch-Lunch.html): breakfast, brunch, bacon?
+Syncing:
 
 - [repo command](https://source.android.com/setup/develop/repo): like a "meta" git command 
 
+> too slow? use `repo sync -c --no-clone-bundle` ([see here](https://stackoverflow.com/questions/28379870/aosp-repo-sync-takes-too-long))
+
+
+Building:
+
+- [android build lingo](http://www.trcompu.com/MySmartPhone/AndroidKitchen/Breakfast-Brunch-Lunch.html): breakfast, brunch, bacon?
+
+
+  - breakfast: configure build environment (select device target)
+
+  - lunch: breakfast but include non-standard targets (like emulator or debug version)
+
+  - mka: 
+
+  - brunch: 
+
+> read the [code](https://github.com/LineageOS/android_build/blob/lineage-18.0/envsetup.sh)
+> [xda blog](https://forum.xda-developers.com/showthread.php?t=2751407)_
 > Advice for building efficiently: [Udi Cohen blog](http://blog.udinic.com/2014/07/24/aosp-part-3-developing-efficiently/)
 
 
